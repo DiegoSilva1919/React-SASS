@@ -1,0 +1,32 @@
+@use '../variable'
+@use '../mixirs'
+
+#main-content
+    background-color: variable.$bg-color
+    flex: 2 1 0
+    border-radius: variable.$container-border-radius
+    padding: 3rem
+
+    section
+        display: flex
+        flex-direction: column
+
+    h2
+        @include mixirs.center
+        justify-content: start
+        gap: 1rem
+        color: variable.$text-color
+        font-size: 2.2rem
+        margin-bottom: 1.3rem
+
+        &::after
+            @include mixirs.gradient-border
+
+    p
+        color: variable.$text-color-secondary
+        margin-bottom: 1rem
+        line-height: 1.3rem
+
+    .btn
+        align-self: start
+        @include mixirs.btn
