@@ -1,5 +1,5 @@
 @use '../variables'
-@use '../mixirs'
+@use '../mixins'
 
 .skills
     margin-bottom: 1rem
@@ -10,15 +10,15 @@
         gap: 1.5rem
 
     .skills-card
-        @include mixirs.center
+        @include mixins.center
         gap: 1rem
         padding: 1rem
         border: 1px solid #333
         width: 45%
-        border-radius: variable.$card-border-radius
+        border-radius: variables.$card-border-radius
 
         h3
-            color: variable.$text-color
+            color: variables.$text-color
             margin-bottom: 1rem
         
         svg

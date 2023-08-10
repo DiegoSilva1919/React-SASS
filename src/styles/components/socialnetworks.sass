@@ -1,18 +1,18 @@
 @use '../variables'
-@use '../mixirs'
+@use '../mixins'
 
 #social-networks
-    @include mixirs.center
+    @include mixins.center
     gap: 1rem 
     margin: 1rem 0
 
     .social-btn
         padding: .6em
-        background-color: variable.$bg-color-secondary
-        border-radius: variable.$card-border-radius
+        background-color: variables.$bg-color-secondary
+        border-radius: variables.$card-border-radius
         color: #333
         font-size: 1.3rem
-        @include mixirs.center
+        @include mixins.center
     
     #linkedin
         color: #0072b1
@@ -21,6 +21,6 @@
         color: #111
 
     :hover
-        background: variable.$gradient
+        background: variables.$gradient
         > svg
-            color: variable.$text-color
+            color: variables.$text-color
